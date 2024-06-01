@@ -9,7 +9,6 @@ import (
 	"encoding/json"
 	"errors"
 	"flag"
-	"log"
 	"os"
 	"os/signal"
 	"regexp"
@@ -40,8 +39,6 @@ var cfg = yacspin.Config{
 var spinner, _ = yacspin.New(cfg)
 
 func main() {
-	log.Println("fuckme 14")
-
 	// Define and parse command-line flags
 	show := flag.Bool("show", false, "Show the browser (disable headless mode)")
 	flag.Parse()
