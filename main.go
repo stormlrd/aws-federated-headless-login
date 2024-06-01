@@ -9,6 +9,7 @@ import (
 	"encoding/json"
 	"errors"
 	"flag"
+	"log"
 	"os"
 	"os/signal"
 	"regexp"
@@ -39,6 +40,8 @@ var cfg = yacspin.Config{
 var spinner, _ = yacspin.New(cfg)
 
 func main() {
+	log.Println("fuckme 14")
+
 	// Define and parse command-line flags
 	show := flag.Bool("show", false, "Show the browser (disable headless mode)")
 	flag.Parse()
@@ -92,9 +95,6 @@ func getURLfromstdin() string {
 }
 
 func ssoLogin(url string, show bool) {
-	// Boolean variable to control whether the browser is shown
-	//show := true
-
 	// Set up the launcher with or without headless mode based on the `show` variable
 	launchurl := launcher.New().Headless(!show).MustLaunch()
 

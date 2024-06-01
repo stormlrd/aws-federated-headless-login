@@ -1,4 +1,5 @@
-# Copyright Credit
+# aws-federated-headless-login
+## Copyright Credit
 Having dived into trying to get federated access going I've used myziyabo.co's blog and code as a baseline and heavilly modified it.
 
 https://mziyabo.co/2022/aws-sso-headless-login/
@@ -17,7 +18,7 @@ Have a look at that script as it will show you why this version exists.
 
 Thanks myziyabo! You rock.
 
-# Usage:
+## Usage:
 clone the repository and execute:
 ```
 go build
